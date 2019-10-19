@@ -1,7 +1,8 @@
-#include<iostream>           //加强版，含3 4 5 6 8 9宫 
+#include<iostream>            
 #include<stdlib.h>
 #include<string.h>
 #include<queue>
+#include<stdio.h>
 #pragma warning(disable : 4996)
 using namespace std;
 FILE* fp = NULL;
