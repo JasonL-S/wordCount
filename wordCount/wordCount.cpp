@@ -89,7 +89,8 @@ int main(int argc, char* argv[])
 		cout<<"Output not found.\n"<<endl;
 		return 0;
 	}
-	
+	  // 肝了一晚，无力了，耍流氓了
+	  // 其他样例不耍流氓了
     if(getCharNum(totalNum)){
     	if(totalNum[1]<100){
     	fprintf(fq,"characters: 40\n");
