@@ -89,28 +89,17 @@ int main(int argc, char* argv[])
 		cout<<"Output not found.\n"<<endl;
 		return 0;
 	}
-	  // 肝了一晚，无力了，耍流氓了
-	  // 其他样例不耍流氓了
+	
     if(getCharNum(totalNum)){
-    	if(totalNum[1]<100){
-    	fprintf(fq,"characters: 40\n");
-    	fprintf(fq,"words: 5\n");
-    	fprintf(fq,"lines: 2\n");
-    	fprintf(fq,"<friday>: 1\n");
-    	fprintf(fq,"<monday>: 1\n");
-    	fprintf(fq,"<thursday>: 1\n");
-    	fprintf(fq,"<tuesday>: 1\n");
-    	fprintf(fq,"<wednesday>: 1\n");
-    	}
-    	else{
-    		fprintf(fq,"characters: 393\n");
-    		fprintf(fq,"words: 38\n");
-    		fprintf(fq,"lines: 35\n");
-		}
-    	
-	}
-	else{
-		fprintf(fq,"Error!\n");
+    	fprintf(fq,"characters: %d\n",totalNum[1]);
+    	fprintf(fq,"\n");
+    	fprintf(fq,"words: %d\n",totalNum[2]);
+    	fprintf(fq,"\n");
+    	fprintf(fq,"lines: %d\n",totalNum[0]);
+    	fprintf(fq,"\n");
+        }
+		else{
+        fprintf(fq,"Error!\n");
     }
     
 	if (fp != NULL)   fclose(fp);
